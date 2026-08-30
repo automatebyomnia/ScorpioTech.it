@@ -50,15 +50,34 @@ header{
   white-space:nowrap;
 }
 
-.brand b{
-  display:inline-grid;
-  place-items:center;
-  width:30px;
-  height:30px;
-  border-radius:8px;
+.brand .automation-icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  border-radius:9px;
   background:var(--ink);
+  color:var(--teal);
+  margin-right:9px;
+  vertical-align:middle;
+  transition:.25s ease;
+}
+
+.brand .automation-icon svg{
+  width:23px;
+  height:23px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2.4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.brand:hover .automation-icon{
+  background:var(--purple);
   color:#fff;
-  margin-right:8px;
+  transform:rotate(12deg);
 }
 
 .brand i,
