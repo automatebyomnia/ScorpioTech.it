@@ -27,9 +27,7 @@ a{
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header,
 section,
@@ -93,10 +91,6 @@ nav{
   font-size:14px;
 }
 
-nav a{
-  transition:.2s;
-}
-
 nav a:hover{
   color:var(--purple);
 }
@@ -118,9 +112,7 @@ nav a:hover{
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
   min-height:550px;
@@ -175,7 +167,6 @@ h1{
 .text-link{
   font-size:14px;
   font-weight:700;
-  color:var(--ink);
 }
 
 .text-link:hover{
@@ -183,27 +174,15 @@ h1{
 }
 
 
-/* =========================
-   WORKFLOW
-========================= */
+/* WORKFLOW */
 
 .workflow{
   height:410px;
   border-radius:25px;
-
   background:
-    radial-gradient(
-      circle at 80% 12%,
-      #7559f7aa,
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 5% 100%,
-      #27c5b399,
-      transparent 28%
-    ),
+    radial-gradient(circle at 80% 12%,#7559f7aa,transparent 28%),
+    radial-gradient(circle at 5% 100%,#27c5b399,transparent 28%),
     var(--ink);
-
   padding:29px;
   position:relative;
   color:#d7e1e9;
@@ -212,7 +191,6 @@ h1{
 
 .workflow small{
   font-size:12px;
-  font-weight:500;
 }
 
 .workflow article{
@@ -256,9 +234,7 @@ h1{
 }
 
 
-/* =========================
-   TRUST BAR
-========================= */
+/* BAR */
 
 .bar{
   width:100%;
@@ -276,9 +252,7 @@ h1{
 }
 
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
+/* SECTIONS */
 
 section:not(.hero):not(.bar):not(.contact){
   margin-top:105px;
@@ -291,9 +265,7 @@ h2{
 }
 
 
-/* =========================
-   SERVICES
-========================= */
+/* SERVICES */
 
 .cards{
   display:grid;
@@ -349,14 +321,8 @@ h3{
   color:var(--purple);
 }
 
-.cards article:nth-child(2) .card-link{
-  color:#8f7cff;
-}
 
-
-/* =========================
-   SOLUTIONS
-========================= */
+/* SOLUTIONS */
 
 .solutions{
   display:grid;
@@ -368,12 +334,10 @@ h3{
 .solutions > div:first-child > p:not(.eyebrow){
   color:var(--muted);
   line-height:1.7;
-  max-width:500px;
 }
 
 .solution-list{
   display:grid;
-  gap:0;
 }
 
 .solution-list article{
@@ -388,9 +352,9 @@ h3{
   border-top:1px solid #d9ded9;
 }
 
-.solution-list article > span{
-  font:700 13px "Space Grotesk";
+.solution-list article>span{
   color:var(--purple);
+  font-weight:700;
 }
 
 .solution-list h3{
@@ -406,9 +370,7 @@ h3{
 }
 
 
-/* =========================
-   APPROACH
-========================= */
+/* APPROACH */
 
 .approach{
   display:grid;
@@ -416,7 +378,7 @@ h3{
   gap:18px;
 }
 
-.approach > div{
+.approach>div{
   padding:45px;
   background:#e9e5ff;
   border-radius:18px;
@@ -427,7 +389,11 @@ h3{
   background:#20ab9d;
   border-radius:18px;
   color:#fff;
-  font:52px Georgia;
+}
+
+.quote-mark{
+  font:60px Georgia;
+  line-height:.5;
 }
 
 .approach aside p{
@@ -437,11 +403,6 @@ h3{
 
 .approach aside small{
   font:12px "DM Sans";
-}
-
-.quote-mark{
-  font:60px Georgia;
-  line-height:.5;
 }
 
 ol{
@@ -473,9 +434,7 @@ li strong{
 }
 
 
-/* =========================
-   ABOUT OMNIA
-========================= */
+/* ABOUT */
 
 .about-me{
   display:grid;
@@ -503,13 +462,13 @@ li strong{
   z-index:1;
   display:block;
   width:100%;
-  aspect-ratio:1 / 1;
+  aspect-ratio:1/1;
   object-fit:cover;
   object-position:center;
   border-radius:24px;
 }
 
-.about-content > p:not(.eyebrow){
+.about-content>p:not(.eyebrow){
   color:var(--muted);
   line-height:1.75;
   max-width:650px;
@@ -545,17 +504,7 @@ li strong{
 }
 
 
-/* =========================
-   WHY US
-========================= */
-
-.why{
-  padding-bottom:20px;
-}
-
-.why > h2{
-  max-width:700px;
-}
+/* WHY */
 
 .why-grid{
   display:grid;
@@ -574,7 +523,7 @@ li strong{
 
 .why-grid strong{
   color:var(--teal);
-  font:700 13px "Space Grotesk";
+  font-weight:700;
 }
 
 .why-grid h3{
@@ -590,25 +539,23 @@ li strong{
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact{
   width:100%;
   margin-top:92px!important;
   text-align:center;
-  padding:100px 15px;
+  padding:100px 20px;
   background:var(--ink);
   color:#fff;
 }
 
 .contact .eyebrow,
-.contact > p:not(.eyebrow){
+.contact>p:not(.eyebrow){
   color:#c3d0d8;
 }
 
-.contact > p:not(.eyebrow){
+.contact>p:not(.eyebrow){
   line-height:1.6;
   max-width:650px;
   margin-left:auto;
@@ -627,7 +574,7 @@ li strong{
   justify-content:center;
   flex-wrap:wrap;
   gap:14px;
-  margin-top:30px;
+  margin:30px 0 20px;
 }
 
 .white{
@@ -646,9 +593,7 @@ li strong{
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
   min-height:95px;
@@ -669,9 +614,7 @@ footer a:hover{
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* TABLET */
 
 @media(max-width:850px){
 
@@ -679,7 +622,7 @@ footer a:hover{
     display:none;
   }
 
-  header > .button{
+  header>.button{
     display:none;
   }
 
@@ -687,14 +630,6 @@ footer a:hover{
     grid-template-columns:1fr;
     gap:35px;
     margin-top:30px;
-  }
-
-  .hero-content{
-    padding:20px 0;
-  }
-
-  .workflow{
-    height:350px;
   }
 
   .cards{
@@ -708,7 +643,6 @@ footer a:hover{
 
   .approach{
     grid-template-columns:1fr;
-    gap:25px;
   }
 
   .why-grid{
@@ -721,13 +655,13 @@ footer a:hover{
   }
 
   .about-photo{
-    width:100%;
-    max-width:420px;
     margin:auto;
   }
 
 }
 
+
+/* MOBILE */
 
 @media(max-width:600px){
 
@@ -778,7 +712,7 @@ footer a:hover{
     word-spacing:7px;
   }
 
-  .approach > div{
+  .approach>div{
     padding:30px;
   }
 
