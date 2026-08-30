@@ -18,25 +18,40 @@
   box-sizing: border-box;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
 
-
 body {
   margin: 0;
-  background: var(--paper);
+
+  /*
+    BACKGROUND IMAGE
+    Make sure background.jpeg is
+    in the same folder as index.html
+    and styles.css.
+  */
+
+  background-image:
+    linear-gradient(
+      rgba(247, 250, 252, 0.88),
+      rgba(247, 250, 252, 0.88)
+    ),
+    url("./background.jpeg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: var(--text);
   font: 16px "DM Sans", sans-serif;
 }
-
 
 a {
   text-decoration: none;
   color: inherit;
 }
-
 
 img {
   max-width: 100%;
@@ -56,7 +71,6 @@ header {
   justify-content: space-between;
 }
 
-
 .brand {
   display: flex;
   align-items: center;
@@ -64,7 +78,6 @@ header {
 
   font: 700 20px "Space Grotesk", sans-serif;
 }
-
 
 .brand img {
   width: 43px;
@@ -75,12 +88,10 @@ header {
   border-radius: 9px;
 }
 
-
 .brand i {
   font-style: normal;
   color: var(--blue-light);
 }
-
 
 nav {
   display: flex;
@@ -91,11 +102,9 @@ nav {
   font-weight: 500;
 }
 
-
 nav a {
   transition: color .2s ease;
 }
-
 
 nav a:hover {
   color: var(--blue-light);
@@ -122,7 +131,6 @@ nav a:hover {
     background .2s ease;
 }
 
-
 .button:hover {
   transform: translateY(-2px);
   background: var(--blue);
@@ -145,11 +153,9 @@ nav a:hover {
   gap: 70px;
 }
 
-
 .hero-content {
   padding: 40px 0;
 }
-
 
 .eyebrow {
   margin: 0 0 15px;
@@ -162,13 +168,11 @@ nav a:hover {
   color: var(--blue);
 }
 
-
 h1,
 h2,
 h3 {
   font-family: "Space Grotesk", sans-serif;
 }
-
 
 h1 {
   max-width: 680px;
@@ -182,13 +186,11 @@ h1 {
   letter-spacing: -3px;
 }
 
-
 h1 i,
 h2 i {
   font-style: normal;
   color: var(--blue);
 }
-
 
 .hero-text {
   max-width: 650px;
@@ -200,7 +202,6 @@ h2 i {
   line-height: 1.7;
 }
 
-
 .hero-buttons {
   margin-top: 30px;
 
@@ -210,12 +211,10 @@ h2 i {
   gap: 25px;
 }
 
-
 .text-link {
   font-size: 14px;
   font-weight: 700;
 }
-
 
 .text-link:hover {
   color: var(--blue);
@@ -256,7 +255,6 @@ h2 i {
     0 25px 60px rgba(7, 26, 61, .15);
 }
 
-
 .workflow::before {
   content: "";
 
@@ -274,7 +272,6 @@ h2 i {
   pointer-events: none;
 }
 
-
 .workflow small {
   position: relative;
   z-index: 2;
@@ -285,7 +282,6 @@ h2 i {
 
   color: #cce8f5;
 }
-
 
 .workflow-card {
   position: absolute;
@@ -313,17 +309,14 @@ h2 i {
     0 15px 35px rgba(0,0,0,.18);
 }
 
-
 .workflow-card span:last-child {
   display: grid;
   gap: 3px;
 }
 
-
 .workflow-card b {
   font-size: 12px;
 }
-
 
 .workflow-card em {
   font-style: normal;
@@ -333,31 +326,26 @@ h2 i {
   color: var(--muted);
 }
 
-
 .icon {
   color: var(--blue);
 
   font-size: 18px;
 }
 
-
 .card-one {
   left: 35px;
   top: 125px;
 }
-
 
 .card-two {
   right: 30px;
   top: 92px;
 }
 
-
 .card-three {
   right: 55px;
   bottom: 70px;
 }
-
 
 .connection {
   position: absolute;
@@ -367,7 +355,6 @@ h2 i {
   border-top: 1px dashed rgba(255,255,255,.35);
 }
 
-
 .connection-one {
   width: 100px;
 
@@ -376,7 +363,6 @@ h2 i {
 
   transform: rotate(-18deg);
 }
-
 
 .connection-two {
   width: 120px;
@@ -414,7 +400,6 @@ h2 i {
   text-align: center;
 }
 
-
 .bar b {
   color: var(--cyan);
 }
@@ -428,7 +413,6 @@ section:not(.hero):not(.bar):not(.contact) {
   margin: 115px auto 0;
 }
 
-
 h2 {
   max-width: 850px;
 
@@ -440,7 +424,6 @@ h2 {
 
   letter-spacing: -2.5px;
 }
-
 
 .intro {
   max-width: 700px;
@@ -466,7 +449,6 @@ h2 {
   gap: 17px;
 }
 
-
 .cards article {
   min-height: 285px;
 
@@ -483,14 +465,12 @@ h2 {
     box-shadow .2s ease;
 }
 
-
 .cards article:hover {
   transform: translateY(-5px);
 
   box-shadow:
     0 15px 35px rgba(7, 26, 61, .08);
 }
-
 
 .cards article.featured {
   background: var(--navy);
@@ -500,13 +480,11 @@ h2 {
   border-color: var(--navy);
 }
 
-
 .cards article > b {
   color: var(--blue-light);
 
   font-size: 13px;
 }
-
 
 .cards h3 {
   margin: 35px 0 13px;
@@ -516,7 +494,6 @@ h2 {
   letter-spacing: -1px;
 }
 
-
 .cards p {
   color: var(--muted);
 
@@ -525,11 +502,9 @@ h2 {
   line-height: 1.65;
 }
 
-
 .cards article.featured p {
   color: #c8d7e6;
 }
-
 
 .card-link {
   display: inline-block;
@@ -542,7 +517,6 @@ h2 {
 
   font-weight: 700;
 }
-
 
 .featured .card-link {
   color: var(--cyan);
@@ -561,20 +535,17 @@ h2 {
   align-items: start;
 }
 
-
 .solutions-intro > p:last-child {
   color: var(--muted);
 
   line-height: 1.7;
 }
 
-
 .solution-list {
   display: grid;
 
   gap: 0;
 }
-
 
 .solution-list article {
   display: grid;
@@ -588,11 +559,9 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
-
 .solution-list article:first-child {
   padding-top: 0;
 }
-
 
 .solution-list > article > span {
   color: var(--blue-light);
@@ -601,13 +570,11 @@ h2 {
     700 13px "Space Grotesk";
 }
 
-
 .solution-list h3 {
   margin: 0 0 7px;
 
   font-size: 21px;
 }
-
 
 .solution-list p {
   margin: 0;
@@ -632,7 +599,6 @@ h2 {
   align-items: center;
 }
 
-
 .about-image {
   min-height: 390px;
 
@@ -653,7 +619,6 @@ h2 {
   border-radius: 24px;
 }
 
-
 .about-image img {
   width: 100%;
 
@@ -664,7 +629,6 @@ h2 {
   border-radius: 15px;
 }
 
-
 .about-content > p:not(.eyebrow) {
   color: var(--muted);
 
@@ -672,7 +636,6 @@ h2 {
 
   font-size: 16px;
 }
-
 
 .founder {
   display: flex;
@@ -683,7 +646,6 @@ h2 {
 
   margin-top: 30px;
 }
-
 
 .founder-badge {
   width: 48px;
@@ -702,18 +664,15 @@ h2 {
     700 14px "Space Grotesk";
 }
 
-
 .founder div:last-child {
   display: grid;
 
   gap: 4px;
 }
 
-
 .founder strong {
   font-size: 15px;
 }
-
 
 .founder span {
   color: var(--muted);
@@ -732,7 +691,6 @@ h2 {
   gap: 18px;
 }
 
-
 .approach-main {
   padding: 45px;
 
@@ -740,7 +698,6 @@ h2 {
 
   border-radius: 20px;
 }
-
 
 .approach ol {
   padding: 0;
@@ -750,7 +707,6 @@ h2 {
   list-style: none;
 }
 
-
 .approach li {
   display: flex;
 
@@ -759,13 +715,11 @@ h2 {
   margin-top: 25px;
 }
 
-
 .approach li > b {
   color: var(--blue);
 
   min-width: 30px;
 }
-
 
 .approach li span {
   display: grid;
@@ -779,13 +733,11 @@ h2 {
   line-height: 1.6;
 }
 
-
 .approach li strong {
   color: var(--text);
 
   font-size: 15px;
 }
-
 
 .approach aside {
   min-height: 100%;
@@ -799,7 +751,6 @@ h2 {
   color: white;
 }
 
-
 .quote-mark {
   font: 65px Georgia;
 
@@ -807,7 +758,6 @@ h2 {
 
   line-height: .7;
 }
-
 
 .approach aside p {
   margin-top: 30px;
@@ -817,7 +767,6 @@ h2 {
 
   line-height: 1.35;
 }
-
 
 .approach aside small {
   color: #bcd0e0;
@@ -839,7 +788,6 @@ h2 {
   gap: 16px;
 }
 
-
 .why-grid article {
   padding: 25px;
 
@@ -850,20 +798,17 @@ h2 {
   border-radius: 15px;
 }
 
-
 .why-grid strong {
   color: var(--blue-light);
 
   font-size: 13px;
 }
 
-
 .why-grid h3 {
   margin: 30px 0 8px;
 
   font-size: 21px;
 }
-
 
 .why-grid p {
   margin: 0;
@@ -899,7 +844,6 @@ h2 {
   color: white;
 }
 
-
 .contact h2 {
   margin-left: auto;
   margin-right: auto;
@@ -907,16 +851,13 @@ h2 {
   max-width: 900px;
 }
 
-
 .contact h2 i {
   color: var(--cyan);
 }
 
-
 .contact .eyebrow {
   color: #9edcf2;
 }
-
 
 .contact > p:not(.eyebrow) {
   max-width: 650px;
@@ -928,7 +869,6 @@ h2 {
   line-height: 1.7;
 }
 
-
 .contact-actions {
   margin-top: 30px;
 
@@ -939,28 +879,23 @@ h2 {
   gap: 12px;
 }
 
-
 .white {
   background: white;
 
   color: var(--navy);
 }
 
-
 .white:hover {
   background: #eef8fc;
 }
-
 
 .whatsapp {
   background: #20b978;
 }
 
-
 .whatsapp:hover {
   background: #159b63;
 }
-
 
 .contact-info {
   margin-top: 30px;
@@ -977,7 +912,6 @@ h2 {
 
   color: #c7d6e4;
 }
-
 
 .contact-info a:hover {
   color: var(--cyan);
@@ -1006,24 +940,20 @@ footer {
   color: var(--muted);
 }
 
-
 footer .brand {
   font-size: 17px;
 }
-
 
 footer .brand img {
   width: 36px;
   height: 36px;
 }
 
-
 .footer-links {
   display: flex;
 
   gap: 18px;
 }
-
 
 .footer-links a:hover {
   color: var(--blue);
@@ -1038,7 +968,6 @@ footer .brand img {
     gap: 16px;
   }
 
-
   .hero {
     grid-template-columns: 1fr;
 
@@ -1046,7 +975,6 @@ footer .brand img {
 
     padding-top: 45px;
   }
-
 
   .workflow {
     max-width: 700px;
@@ -1056,12 +984,10 @@ footer .brand img {
     margin: auto;
   }
 
-
   .cards {
     grid-template-columns:
       repeat(2, 1fr);
   }
-
 
   .solutions,
   .about {
@@ -1070,12 +996,10 @@ footer .brand img {
     gap: 40px;
   }
 
-
   .why-grid {
     grid-template-columns:
       repeat(2, 1fr);
   }
-
 
   .approach {
     grid-template-columns: 1fr;
@@ -1084,29 +1008,46 @@ footer .brand img {
 }
 
 
+/* ================= MOBILE ================= */
+
 @media (max-width: 700px) {
+
+  /*
+    Mobile background
+  */
+
+  body {
+    background-image:
+      linear-gradient(
+        rgba(247, 250, 252, 0.90),
+        rgba(247, 250, 252, 0.90)
+      ),
+      url("./background.jpeg");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
 
   header {
     height: 75px;
   }
-
 
   header nav,
   header > .button {
     display: none;
   }
 
-
   .brand {
     font-size: 18px;
   }
-
 
   .brand img {
     width: 39px;
     height: 39px;
   }
-
 
   .hero {
     padding-top: 25px;
@@ -1114,18 +1055,15 @@ footer .brand img {
     min-height: auto;
   }
 
-
   h1 {
     font-size: 48px;
 
     letter-spacing: -2px;
   }
 
-
   .hero-text {
     font-size: 16px;
   }
-
 
   .hero-buttons {
     align-items: flex-start;
@@ -1135,41 +1073,34 @@ footer .brand img {
     gap: 18px;
   }
 
-
   .workflow {
     height: 350px;
 
     border-radius: 20px;
   }
 
-
   .workflow-card {
     width: 165px;
   }
-
 
   .card-one {
     left: 20px;
     top: 105px;
   }
 
-
   .card-two {
     right: 18px;
     top: 75px;
   }
-
 
   .card-three {
     right: 25px;
     bottom: 45px;
   }
 
-
   .connection {
     display: none;
   }
-
 
   .bar {
     flex-wrap: wrap;
@@ -1181,11 +1112,9 @@ footer .brand img {
     letter-spacing: 1px;
   }
 
-
   section:not(.hero):not(.bar):not(.contact) {
     margin-top: 80px;
   }
-
 
   h2 {
     font-size: 38px;
@@ -1193,43 +1122,35 @@ footer .brand img {
     letter-spacing: -1.8px;
   }
 
-
   .cards {
     grid-template-columns: 1fr;
 
     gap: 14px;
   }
 
-
   .cards article {
     min-height: auto;
   }
-
 
   .about-image {
     min-height: 280px;
   }
 
-
   .approach-main {
     padding: 30px 24px;
   }
-
 
   .approach aside {
     min-height: 300px;
   }
 
-
   .why-grid {
     grid-template-columns: 1fr;
   }
 
-
   .contact {
     padding: 75px 20px;
   }
-
 
   .contact-actions {
     flex-direction: column;
@@ -1243,13 +1164,11 @@ footer .brand img {
     margin-right: auto;
   }
 
-
   .contact-info {
     flex-direction: column;
 
     gap: 12px;
   }
-
 
   footer {
     padding: 30px 0;
@@ -1258,7 +1177,6 @@ footer .brand img {
 
     align-items: flex-start;
   }
-
 
   .footer-links {
     flex-wrap: wrap;
